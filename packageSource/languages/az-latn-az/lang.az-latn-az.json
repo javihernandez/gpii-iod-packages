@@ -1,0 +1,7 @@
+{
+  "name": "language.az-latn-az",
+  "description": "Language for az-latn-az: Azerbaijani (Latin)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackaz-latn-az",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.cs-cz",
+  "description": "Language for cs-cz: Czech",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackcs-cz",
+  "uninstallTime": "never"
+}

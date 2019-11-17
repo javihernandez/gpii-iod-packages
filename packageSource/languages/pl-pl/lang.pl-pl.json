@@ -1,0 +1,7 @@
+{
+  "name": "language.pl-pl",
+  "description": "Language for pl-pl: Polish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackpl-pl",
+  "uninstallTime": "never"
+}

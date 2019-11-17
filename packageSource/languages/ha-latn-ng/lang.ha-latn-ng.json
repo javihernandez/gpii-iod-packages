@@ -1,0 +1,7 @@
+{
+  "name": "language.ha-latn-ng",
+  "description": "Language for ha-latn-ng: Hausa (Latin)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackha-latn-ng",
+  "uninstallTime": "never"
+}

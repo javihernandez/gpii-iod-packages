@@ -1,0 +1,7 @@
+{
+  "name": "language.id-id",
+  "description": "Language for id-id: Indonesian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackid-id",
+  "uninstallTime": "never"
+}

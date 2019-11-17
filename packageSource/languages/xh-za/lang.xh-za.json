@@ -1,0 +1,7 @@
+{
+  "name": "language.xh-za",
+  "description": "Language for xh-za: isiXhosa",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackxh-za",
+  "uninstallTime": "never"
+}

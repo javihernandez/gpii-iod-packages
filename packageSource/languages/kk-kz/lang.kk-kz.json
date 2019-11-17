@@ -1,0 +1,7 @@
+{
+  "name": "language.kk-kz",
+  "description": "Language for kk-kz: Kazakh",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackkk-kz",
+  "uninstallTime": "never"
+}

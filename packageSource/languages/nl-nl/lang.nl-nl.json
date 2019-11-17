@@ -1,0 +1,7 @@
+{
+  "name": "language.nl-nl",
+  "description": "Language for nl-nl: Dutch (Netherlands)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacknl-nl",
+  "uninstallTime": "never"
+}

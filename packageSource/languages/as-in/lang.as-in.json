@@ -1,0 +1,7 @@
+{
+  "name": "language.as-in",
+  "description": "Language for as-in: Assamese",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackas-in",
+  "uninstallTime": "never"
+}

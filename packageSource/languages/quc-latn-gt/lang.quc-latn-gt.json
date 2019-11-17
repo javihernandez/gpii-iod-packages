@@ -1,0 +1,7 @@
+{
+  "name": "language.quc-latn-gt",
+  "description": "Language for quc-latn-gt: K’iche’",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackquc-latn-gt",
+  "uninstallTime": "never"
+}

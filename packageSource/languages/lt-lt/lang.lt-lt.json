@@ -1,0 +1,7 @@
+{
+  "name": "language.lt-lt",
+  "description": "Language for lt-lt: Lithuanian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacklt-lt",
+  "uninstallTime": "never"
+}

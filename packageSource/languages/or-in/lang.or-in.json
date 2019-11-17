@@ -1,0 +1,7 @@
+{
+  "name": "language.or-in",
+  "description": "Language for or-in: Odia",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackor-in",
+  "uninstallTime": "never"
+}

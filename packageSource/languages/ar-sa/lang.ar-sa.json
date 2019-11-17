@@ -1,0 +1,7 @@
+{
+  "name": "language.ar-sa",
+  "description": "Language for ar-sa: Arabic (Saudi Arabia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackar-sa",
+  "uninstallTime": "never"
+}

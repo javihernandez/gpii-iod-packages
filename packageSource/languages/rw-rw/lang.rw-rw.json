@@ -1,0 +1,7 @@
+{
+  "name": "language.rw-rw",
+  "description": "Language for rw-rw: Kinyarwanda",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackrw-rw",
+  "uninstallTime": "never"
+}

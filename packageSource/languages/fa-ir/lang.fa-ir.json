@@ -1,0 +1,7 @@
+{
+  "name": "language.fa-ir",
+  "description": "Language for fa-ir: Persian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackfa-ir",
+  "uninstallTime": "never"
+}

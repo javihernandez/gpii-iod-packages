@@ -1,0 +1,7 @@
+{
+  "name": "language.quz-pe",
+  "description": "Language for quz-pe: Quechua (Peru)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackquz-pe",
+  "uninstallTime": "never"
+}

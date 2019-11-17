@@ -1,0 +1,7 @@
+{
+  "name": "language.zh-cn",
+  "description": "Language for zh-cn: Chinese (Simplified, China)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackzh-cn",
+  "uninstallTime": "never"
+}

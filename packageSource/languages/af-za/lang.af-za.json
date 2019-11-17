@@ -1,0 +1,7 @@
+{
+  "name": "language.af-za",
+  "description": "Language for af-za: Afrikaans",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackaf-za",
+  "uninstallTime": "never"
+}

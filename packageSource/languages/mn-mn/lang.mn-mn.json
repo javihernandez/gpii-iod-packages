@@ -1,0 +1,7 @@
+{
+  "name": "language.mn-mn",
+  "description": "Language for mn-mn: Mongolian (Cyrillic)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackmn-mn",
+  "uninstallTime": "never"
+}

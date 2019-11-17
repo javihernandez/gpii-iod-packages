@@ -1,0 +1,7 @@
+{
+  "name": "language.ja-jp",
+  "description": "Language for ja-jp: Japanese",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackja-jp",
+  "uninstallTime": "never"
+}

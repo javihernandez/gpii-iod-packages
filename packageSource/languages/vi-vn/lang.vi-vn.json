@@ -1,0 +1,7 @@
+{
+  "name": "language.vi-vn",
+  "description": "Language for vi-vn: Vietnamese",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackvi-vn",
+  "uninstallTime": "never"
+}

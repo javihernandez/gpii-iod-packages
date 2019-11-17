@@ -1,0 +1,7 @@
+{
+  "name": "language.yo-ng",
+  "description": "Language for yo-ng: Yoruba",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackyo-ng",
+  "uninstallTime": "never"
+}

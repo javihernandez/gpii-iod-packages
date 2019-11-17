@@ -1,0 +1,7 @@
+{
+  "name": "language.ur-pk",
+  "description": "Language for ur-pk: Urdu (Pakistan)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackur-pk",
+  "uninstallTime": "never"
+}

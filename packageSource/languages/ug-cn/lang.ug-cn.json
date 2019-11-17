@@ -1,0 +1,7 @@
+{
+  "name": "language.ug-cn",
+  "description": "Language for ug-cn: Uyghur",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackug-cn",
+  "uninstallTime": "never"
+}

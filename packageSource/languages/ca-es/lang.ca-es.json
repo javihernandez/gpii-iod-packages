@@ -1,0 +1,7 @@
+{
+  "name": "language.ca-es",
+  "description": "Language for ca-es: Catalan",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackca-es",
+  "uninstallTime": "never"
+}

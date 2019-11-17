@@ -1,0 +1,7 @@
+{
+  "name": "language.hy-am",
+  "description": "Language for hy-am: Armenian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackhy-am",
+  "uninstallTime": "never"
+}

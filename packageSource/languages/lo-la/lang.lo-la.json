@@ -1,0 +1,7 @@
+{
+  "name": "language.lo-la",
+  "description": "Language for lo-la: Lao",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacklo-la",
+  "uninstallTime": "never"
+}

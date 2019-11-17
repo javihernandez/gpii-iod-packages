@@ -1,0 +1,7 @@
+{
+  "name": "language.th-th",
+  "description": "Language for th-th: Thai",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackth-th",
+  "uninstallTime": "never"
+}

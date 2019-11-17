@@ -1,0 +1,7 @@
+{
+  "name": "language.ti-et",
+  "description": "Language for ti-et: Tigrinya (Ethiopia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackti-et",
+  "uninstallTime": "never"
+}

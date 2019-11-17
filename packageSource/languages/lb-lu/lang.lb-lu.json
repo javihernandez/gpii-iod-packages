@@ -1,0 +1,7 @@
+{
+  "name": "language.lb-lu",
+  "description": "Language for lb-lu: Luxembourgish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacklb-lu",
+  "uninstallTime": "never"
+}

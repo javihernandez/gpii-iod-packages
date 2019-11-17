@@ -1,0 +1,7 @@
+{
+  "name": "language.wo-sn",
+  "description": "Language for wo-sn: Wolof",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackwo-sn",
+  "uninstallTime": "never"
+}

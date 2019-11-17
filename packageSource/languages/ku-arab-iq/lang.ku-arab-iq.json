@@ -1,0 +1,7 @@
+{
+  "name": "language.ku-arab-iq",
+  "description": "Language for ku-arab-iq: Central Kurdish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackku-arab-iq",
+  "uninstallTime": "never"
+}

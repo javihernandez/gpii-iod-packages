@@ -1,0 +1,7 @@
+{
+  "name": "language.si-lk",
+  "description": "Language for si-lk: Sinhala",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksi-lk",
+  "uninstallTime": "never"
+}

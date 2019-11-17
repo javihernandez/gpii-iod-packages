@@ -1,0 +1,7 @@
+{
+  "name": "language.bs-latn-ba",
+  "description": "Language for bs-latn-ba: Bosnian (Latin)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackbs-latn-ba",
+  "uninstallTime": "never"
+}

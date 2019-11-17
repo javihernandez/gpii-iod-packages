@@ -1,0 +1,7 @@
+{
+  "name": "language.ro-ro",
+  "description": "Language for ro-ro: Romanian (Romania)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackro-ro",
+  "uninstallTime": "never"
+}

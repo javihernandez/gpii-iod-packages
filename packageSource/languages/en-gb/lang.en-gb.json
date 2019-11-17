@@ -1,0 +1,7 @@
+{
+  "name": "language.en-gb",
+  "description": "Language for en-gb: English (United Kingdom)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacken-gb",
+  "uninstallTime": "never"
+}

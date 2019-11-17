@@ -1,0 +1,7 @@
+{
+  "name": "language.ky-kg",
+  "description": "Language for ky-kg: Kyrgyz",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackky-kg",
+  "uninstallTime": "never"
+}

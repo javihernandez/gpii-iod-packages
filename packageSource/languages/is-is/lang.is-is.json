@@ -1,0 +1,7 @@
+{
+  "name": "language.is-is",
+  "description": "Language for is-is: Icelandic",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackis-is",
+  "uninstallTime": "never"
+}

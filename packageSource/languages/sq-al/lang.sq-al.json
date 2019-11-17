@@ -1,0 +1,7 @@
+{
+  "name": "language.sq-al",
+  "description": "Language for sq-al: Albanian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksq-al",
+  "uninstallTime": "never"
+}

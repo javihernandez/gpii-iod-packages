@@ -1,0 +1,7 @@
+{
+  "name": "language.am-et",
+  "description": "Language for am-et: Amharic",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackam-et",
+  "uninstallTime": "never"
+}

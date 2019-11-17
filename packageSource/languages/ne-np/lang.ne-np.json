@@ -1,0 +1,7 @@
+{
+  "name": "language.ne-np",
+  "description": "Language for ne-np: Nepali (Nepal)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackne-np",
+  "uninstallTime": "never"
+}

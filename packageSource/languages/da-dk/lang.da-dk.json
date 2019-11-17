@@ -1,0 +1,7 @@
+{
+  "name": "language.da-dk",
+  "description": "Language for da-dk: Danish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackda-dk",
+  "uninstallTime": "never"
+}

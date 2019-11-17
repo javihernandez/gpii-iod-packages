@@ -1,0 +1,7 @@
+{
+  "name": "language.ru-ru",
+  "description": "Language for ru-ru: Russian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackru-ru",
+  "uninstallTime": "never"
+}

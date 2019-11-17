@@ -1,0 +1,7 @@
+{
+  "name": "language.uz-latn-uz",
+  "description": "Language for uz-latn-uz: Uzbek (Latin)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackuz-latn-uz",
+  "uninstallTime": "never"
+}

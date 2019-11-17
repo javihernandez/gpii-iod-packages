@@ -1,0 +1,7 @@
+{
+  "name": "language.mt-mt",
+  "description": "Language for mt-mt: Maltese",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackmt-mt",
+  "uninstallTime": "never"
+}

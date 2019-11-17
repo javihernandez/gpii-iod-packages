@@ -1,0 +1,7 @@
+{
+  "name": "language.sl-si",
+  "description": "Language for sl-si: Slovenian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksl-si",
+  "uninstallTime": "never"
+}

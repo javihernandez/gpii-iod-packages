@@ -1,0 +1,7 @@
+{
+  "name": "language.fi-fi",
+  "description": "Language for fi-fi: Finnish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackfi-fi",
+  "uninstallTime": "never"
+}

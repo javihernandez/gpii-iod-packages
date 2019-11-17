@@ -1,0 +1,7 @@
+{
+  "name": "language.ko-kr",
+  "description": "Language for ko-kr: Korean",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackko-kr",
+  "uninstallTime": "never"
+}

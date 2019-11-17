@@ -1,0 +1,14 @@
+{
+    "name": "iod-packages",
+    "version": "1.0.0",
+    "dependencies": {
+        "gpii-iod": "file:../iod/",
+        "json5": "^2.1.1",
+        "minimist": "^1.2.0",
+        "mkdirp": "^0.5.1",
+        "request": "^2.88.0"
+    },
+    "scripts": {
+        "build": "node ./build.js --all"
+    }
+}

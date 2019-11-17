@@ -1,0 +1,7 @@
+{
+  "name": "language.fil-ph",
+  "description": "Language for fil-ph: Filipino",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackfil-ph",
+  "uninstallTime": "never"
+}

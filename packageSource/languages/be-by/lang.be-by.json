@@ -1,0 +1,7 @@
+{
+  "name": "language.be-by",
+  "description": "Language for be-by: Belarusian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackbe-by",
+  "uninstallTime": "never"
+}

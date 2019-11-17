@@ -1,0 +1,7 @@
+{
+  "name": "language.sv-se",
+  "description": "Language for sv-se: Swedish (Sweden)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksv-se",
+  "uninstallTime": "never"
+}

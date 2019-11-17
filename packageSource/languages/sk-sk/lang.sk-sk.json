@@ -1,0 +1,7 @@
+{
+  "name": "language.sk-sk",
+  "description": "Language for sk-sk: Slovak",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksk-sk",
+  "uninstallTime": "never"
+}

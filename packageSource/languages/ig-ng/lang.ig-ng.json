@@ -1,0 +1,7 @@
+{
+  "name": "language.ig-ng",
+  "description": "Language for ig-ng: Igbo",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackig-ng",
+  "uninstallTime": "never"
+}

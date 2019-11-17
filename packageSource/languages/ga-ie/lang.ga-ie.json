@@ -1,0 +1,7 @@
+{
+  "name": "language.ga-ie",
+  "description": "Language for ga-ie: Irish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackga-ie",
+  "uninstallTime": "never"
+}

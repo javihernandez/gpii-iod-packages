@@ -1,0 +1,7 @@
+{
+  "name": "language.fr-ca",
+  "description": "Language for fr-ca: French (Canada)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackfr-ca",
+  "uninstallTime": "never"
+}

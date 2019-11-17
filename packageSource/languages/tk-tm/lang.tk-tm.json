@@ -1,0 +1,7 @@
+{
+  "name": "language.tk-tm",
+  "description": "Language for tk-tm: Turkmen (Latin)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacktk-tm",
+  "uninstallTime": "never"
+}

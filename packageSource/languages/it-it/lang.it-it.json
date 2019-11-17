@@ -1,0 +1,7 @@
+{
+  "name": "language.it-it",
+  "description": "Language for it-it: Italian (Italy)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackit-it",
+  "uninstallTime": "never"
+}

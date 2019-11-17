@@ -1,0 +1,7 @@
+{
+  "name": "language.kok-in",
+  "description": "Language for kok-in: Konkani",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackkok-in",
+  "uninstallTime": "never"
+}

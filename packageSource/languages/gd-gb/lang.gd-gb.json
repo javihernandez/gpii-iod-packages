@@ -1,0 +1,7 @@
+{
+  "name": "language.gd-gb",
+  "description": "Language for gd-gb: Scottish Gaelic",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackgd-gb",
+  "uninstallTime": "never"
+}

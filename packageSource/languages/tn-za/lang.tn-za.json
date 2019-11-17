@@ -1,0 +1,7 @@
+{
+  "name": "language.tn-za",
+  "description": "Language for tn-za: Setswana (South Africa)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacktn-za",
+  "uninstallTime": "never"
+}

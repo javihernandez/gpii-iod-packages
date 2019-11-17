@@ -1,0 +1,7 @@
+{
+  "name": "language.cy-gb",
+  "description": "Language for cy-gb: Welsh",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackcy-gb",
+  "uninstallTime": "never"
+}

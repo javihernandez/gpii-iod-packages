@@ -1,0 +1,7 @@
+{
+  "name": "language.sr-latn-rs",
+  "description": "Language for sr-latn-rs: Serbian (Latin, Serbia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksr-latn-rs",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.lv-lv",
+  "description": "Language for lv-lv: Latvian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacklv-lv",
+  "uninstallTime": "never"
+}

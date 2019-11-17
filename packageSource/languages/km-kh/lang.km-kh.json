@@ -1,0 +1,7 @@
+{
+  "name": "language.km-kh",
+  "description": "Language for km-kh: Khmer",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackkm-kh",
+  "uninstallTime": "never"
+}

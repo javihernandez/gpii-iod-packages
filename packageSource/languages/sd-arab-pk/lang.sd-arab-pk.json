@@ -1,0 +1,7 @@
+{
+  "name": "language.sd-arab-pk",
+  "description": "Language for sd-arab-pk: Sindhi (Arabic)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksd-arab-pk",
+  "uninstallTime": "never"
+}

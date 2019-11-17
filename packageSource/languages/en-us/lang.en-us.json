@@ -1,0 +1,7 @@
+{
+  "name": "language.en-us",
+  "description": "Language for en-us: English (United States)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacken-us",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.gu-in",
+  "description": "Language for gu-in: Gujarati",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackgu-in",
+  "uninstallTime": "never"
+}

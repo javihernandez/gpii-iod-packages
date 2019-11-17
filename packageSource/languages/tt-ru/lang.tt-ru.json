@@ -1,0 +1,7 @@
+{
+  "name": "language.tt-ru",
+  "description": "Language for tt-ru: Tatar (Cyrillic)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacktt-ru",
+  "uninstallTime": "never"
+}

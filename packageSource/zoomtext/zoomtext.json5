@@ -1,0 +1,17 @@
+{
+    "name": "zoomtext",
+    "description": "ZoomText 2020",
+    "packageType": "exe",
+    "installer": "ZT2020.1910.96.400.exe",
+    "installerArgs": "/Type Silent",
+    "uninstallerArgs": "/Type SilentUninstall",
+    "keepInstaller": true,
+    "elevate": true,
+    "desktop": true,
+    "isInstalled": {
+        transform: {
+            type: "fluid.transforms.value",
+            input: "${{exists}C:\\Program Files\\Freedom Scientific\\ZoomText\\2020\\Zt.exe}"
+        }
+    }
+}

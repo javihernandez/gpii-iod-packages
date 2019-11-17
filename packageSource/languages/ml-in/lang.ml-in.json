@@ -1,0 +1,7 @@
+{
+  "name": "language.ml-in",
+  "description": "Language for ml-in: Malayalam",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackml-in",
+  "uninstallTime": "never"
+}

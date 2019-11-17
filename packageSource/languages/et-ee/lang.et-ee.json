@@ -1,0 +1,7 @@
+{
+  "name": "language.et-ee",
+  "description": "Language for et-ee: Estonian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacket-ee",
+  "uninstallTime": "never"
+}

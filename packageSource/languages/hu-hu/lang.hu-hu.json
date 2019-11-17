@@ -1,0 +1,7 @@
+{
+  "name": "language.hu-hu",
+  "description": "Language for hu-hu: Hungarian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackhu-hu",
+  "uninstallTime": "never"
+}

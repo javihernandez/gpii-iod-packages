@@ -1,0 +1,7 @@
+{
+  "name": "language.gl-es",
+  "description": "Language for gl-es: Galician",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackgl-es",
+  "uninstallTime": "never"
+}

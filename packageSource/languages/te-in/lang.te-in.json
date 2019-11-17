@@ -1,0 +1,7 @@
+{
+  "name": "language.te-in",
+  "description": "Language for te-in: Telugu",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackte-in",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.mr-in",
+  "description": "Language for mr-in: Marathi",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackmr-in",
+  "uninstallTime": "never"
+}

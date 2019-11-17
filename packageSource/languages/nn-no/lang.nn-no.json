@@ -1,0 +1,7 @@
+{
+  "name": "language.nn-no",
+  "description": "Language for nn-no: Norwegian (Nynorsk)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacknn-no",
+  "uninstallTime": "never"
+}

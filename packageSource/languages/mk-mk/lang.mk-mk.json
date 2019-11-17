@@ -1,0 +1,7 @@
+{
+  "name": "language.mk-mk",
+  "description": "Language for mk-mk: Macedonian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackmk-mk",
+  "uninstallTime": "never"
+}

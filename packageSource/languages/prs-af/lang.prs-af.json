@@ -1,0 +1,7 @@
+{
+  "name": "language.prs-af",
+  "description": "Language for prs-af: Dari",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackprs-af",
+  "uninstallTime": "never"
+}

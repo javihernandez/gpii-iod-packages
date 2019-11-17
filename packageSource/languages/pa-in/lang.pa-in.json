@@ -1,0 +1,7 @@
+{
+  "name": "language.pa-in",
+  "description": "Language for pa-in: Punjabi (Gurmukhi)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackpa-in",
+  "uninstallTime": "never"
+}

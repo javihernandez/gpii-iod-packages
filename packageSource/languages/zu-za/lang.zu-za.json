@@ -1,0 +1,7 @@
+{
+  "name": "language.zu-za",
+  "description": "Language for zu-za: isiZulu",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackzu-za",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.sr-cyrl-rs",
+  "description": "Language for sr-cyrl-rs: Serbian (Cyrillic, Serbia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksr-cyrl-rs",
+  "uninstallTime": "never"
+}

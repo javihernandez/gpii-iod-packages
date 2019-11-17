@@ -1,0 +1,7 @@
+{
+  "name": "language.chr-cher-us",
+  "description": "Language for chr-cher-us: Cherokee (Cherokee)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackchr-cher-us",
+  "uninstallTime": "never"
+}

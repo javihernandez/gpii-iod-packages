@@ -1,0 +1,7 @@
+{
+  "name": "language.hr-hr",
+  "description": "Language for hr-hr: Croatian (Croatia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackhr-hr",
+  "uninstallTime": "never"
+}

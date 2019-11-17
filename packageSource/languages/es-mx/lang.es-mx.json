@@ -1,0 +1,7 @@
+{
+  "name": "language.es-mx",
+  "description": "Language for es-mx: Spanish (Mexico)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackes-mx",
+  "uninstallTime": "never"
+}

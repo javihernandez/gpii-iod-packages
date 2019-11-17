@@ -1,0 +1,7 @@
+{
+  "name": "language.zh-tw",
+  "description": "Language for zh-tw: Chinese (Traditional, Taiwan)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackzh-tw",
+  "uninstallTime": "never"
+}

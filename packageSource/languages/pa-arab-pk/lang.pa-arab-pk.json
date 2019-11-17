@@ -1,0 +1,7 @@
+{
+  "name": "language.pa-arab-pk",
+  "description": "Language for pa-arab-pk: Punjabi (Arabic)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackpa-arab-pk",
+  "uninstallTime": "never"
+}

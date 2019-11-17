@@ -1,0 +1,7 @@
+{
+  "name": "language.de-de",
+  "description": "Language for de-de: German (Germany)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackde-de",
+  "uninstallTime": "never"
+}

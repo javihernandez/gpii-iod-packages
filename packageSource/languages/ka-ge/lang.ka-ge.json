@@ -1,0 +1,7 @@
+{
+  "name": "language.ka-ge",
+  "description": "Language for ka-ge: Georgian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackka-ge",
+  "uninstallTime": "never"
+}

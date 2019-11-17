@@ -1,0 +1,7 @@
+{
+  "name": "language.kn-in",
+  "description": "Language for kn-in: Kannada",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackkn-in",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.tg-cyrl-tj",
+  "description": "Language for tg-cyrl-tj: Tajik (Cyrillic)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacktg-cyrl-tj",
+  "uninstallTime": "never"
+}

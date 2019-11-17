@@ -1,0 +1,7 @@
+{
+  "name": "language.bn-in",
+  "description": "Language for bn-in: Bangla (India)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackbn-in",
+  "uninstallTime": "never"
+}

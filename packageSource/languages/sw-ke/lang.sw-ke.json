@@ -1,0 +1,7 @@
+{
+  "name": "language.sw-ke",
+  "description": "Language for sw-ke: Kiswahili",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacksw-ke",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.ca-es-valencia",
+  "description": "Language for ca-es-valencia: Valencian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackca-es-valencia",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.he-il",
+  "description": "Language for he-il: Hebrew",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackhe-il",
+  "uninstallTime": "never"
+}

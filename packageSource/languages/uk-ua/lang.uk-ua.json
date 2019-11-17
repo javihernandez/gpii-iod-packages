@@ -1,0 +1,7 @@
+{
+  "name": "language.uk-ua",
+  "description": "Language for uk-ua: Ukrainian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackuk-ua",
+  "uninstallTime": "never"
+}

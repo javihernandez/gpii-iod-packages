@@ -1,0 +1,7 @@
+{
+  "name": "language.ms-my",
+  "description": "Language for ms-my: Malay (Malaysia)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackms-my",
+  "uninstallTime": "never"
+}

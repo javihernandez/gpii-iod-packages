@@ -1,0 +1,7 @@
+{
+  "name": "language.hi-in",
+  "description": "Language for hi-in: Hindi",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackhi-in",
+  "uninstallTime": "never"
+}

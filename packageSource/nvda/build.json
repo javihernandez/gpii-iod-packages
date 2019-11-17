@@ -1,0 +1,4 @@
+{
+    "packageData": "nvda.json",
+    "installer": "https://chocolatey.org/api/v2/package/nvda/2019.2",
+}

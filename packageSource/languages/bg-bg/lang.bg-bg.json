@@ -1,0 +1,7 @@
+{
+  "name": "language.bg-bg",
+  "description": "Language for bg-bg: Bulgarian",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackbg-bg",
+  "uninstallTime": "never"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "language.pt-pt",
+  "description": "Language for pt-pt: Portuguese (Portugal)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackpt-pt",
+  "uninstallTime": "never"
+}

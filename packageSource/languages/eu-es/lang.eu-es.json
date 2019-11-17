@@ -1,0 +1,7 @@
+{
+  "name": "language.eu-es",
+  "description": "Language for eu-es: Basque",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackeu-es",
+  "uninstallTime": "never"
+}

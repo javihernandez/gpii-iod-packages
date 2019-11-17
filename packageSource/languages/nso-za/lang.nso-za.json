@@ -1,0 +1,7 @@
+{
+  "name": "language.nso-za",
+  "description": "Language for nso-za: Sesotho sa Leboa",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacknso-za",
+  "uninstallTime": "never"
+}

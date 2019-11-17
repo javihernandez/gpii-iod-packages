@@ -1,0 +1,7 @@
+{
+  "name": "language.tr-tr",
+  "description": "Language for tr-tr: Turkish",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePacktr-tr",
+  "uninstallTime": "never"
+}

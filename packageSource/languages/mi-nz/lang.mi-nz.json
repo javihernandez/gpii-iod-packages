@@ -1,0 +1,7 @@
+{
+  "name": "language.mi-nz",
+  "description": "Language for mi-nz: Maori",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackmi-nz",
+  "uninstallTime": "never"
+}

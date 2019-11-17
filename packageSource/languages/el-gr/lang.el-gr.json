@@ -1,0 +1,7 @@
+{
+  "name": "language.el-gr",
+  "description": "Language for el-gr: Greek",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackel-gr",
+  "uninstallTime": "never"
+}

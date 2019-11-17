@@ -1,0 +1,7 @@
+{
+  "name": "language.ta-in",
+  "description": "Language for ta-in: Tamil (India)",
+  "packageType": "appx",
+  "appxPackageName": "Microsoft.LanguageExperiencePackta-in",
+  "uninstallTime": "never"
+}
