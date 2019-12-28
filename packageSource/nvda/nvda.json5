@@ -1,14 +1,20 @@
 {
     "name": "nvda",
-    "description": "NVDA 2019.2",
-    "installer": "nvda.2019.2.nupkg",
-    "packageType": "chocolatey",
-    "isInstalled": {
-        "installed": true
-    },
-    "start": "\"c:\\Program Files (x86)\\NVDA\\nvda.exe\"",
+    "description": "NVDA 2019.2.1",
+    "packageType": "msi",
+
+    "installer": "nvda-iod.msi",
+
+    "elevate": true,
+//    "isInstalled": {
+//        transform: {
+//            type: "fluid.transforms.value",
+//            input: "${{exists}C:\\Program Files\\Freedom Scientific\\ZoomText\\2020\\Zt.exe}"
+//        }
+//    }
+    "start": "${{environment}.LOCALAPPDATA}\\nvda-iod\\nvda.exe",
     "stop": {
-        cmd: "taskkill",
-        args: "/f /im nvda.exe"
+        cmd: "${{environment}.LOCALAPPDATA}\\nvda-iod\\nvda.exe",
+        args: "--quit"
     }
 }

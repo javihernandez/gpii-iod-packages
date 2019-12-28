@@ -144,7 +144,7 @@ function generateKey() {
     mkdirp.sync(dir);
 
     // Generate the fingerprint of the public key
-    var keyBuffer = gpii.iod.packageFile.readPEM(keyPair.publicKey);
+    var keyBuffer = gpii.iodServer.packageFile.readPEM(keyPair.publicKey);
     var fingerprint = crypto.createHash("sha256").update(keyBuffer).digest("base64");
 
     // Put it in the public key file (for humans)
@@ -365,7 +365,7 @@ function build(buildInfo, key) {
     var promiseTogo = fluid.promise();
     fluid.toPromise(installer).then(function (installerFile) {
         mkdirp.sync(path.dirname(buildInfo.packageOutput));
-        gpii.iod.packageFile.create(buildInfo.packageDataObject, installerFile, key, buildInfo.packageOutput).then(function () {
+        gpii.iodServer.packageFile.create(buildInfo.packageDataObject, installerFile, key, buildInfo.packageOutput).then(function () {
             console.log("Built package '" + buildInfo.name + "':", buildInfo.packageOutput);
             promiseTogo.resolve();
         }, function (err) {
