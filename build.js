@@ -24,7 +24,8 @@ var gpii = fluid.registerNamespace("gpii");
 var parseArgs = require("minimist"),
     fs = require("fs"),
     path = require("path"),
-    json5 = require("json5"),
+    glob = require("glob"),
+    JSON5 = require("json5"),
     os = require("os"),
     crypto = require("crypto"),
     request = require("request"),
@@ -33,8 +34,6 @@ var parseArgs = require("minimist"),
 console.log("\n");
 
 var config = {
-    // Build all packages in the package source directory.
-    all: false,
     // Build packages even if they're already up to date.
     force: false,
     // The package source directory.
@@ -43,8 +42,8 @@ var config = {
     output: "./output",
     // The installer downloads directory
     downloads: "./download-cache",
-    // Packages to build - either multiple --package, or split with comma (,).
-    packages: "",
+    // package list file
+    packages: "package-list.json5",
     key: path.join(os.homedir(), ".gpii/iod-package-key"),
     keygen: false
 };
@@ -61,16 +60,21 @@ var argOptions = {
 
 config = parseArgs(process.argv.slice(2), argOptions);
 
-config.source = path.resolve(config.source);
 config.output = path.resolve(config.output);
 config.downloads = path.resolve(config.downloads);
 config.key = path.resolve(config.key);
 config.pubkey = path.resolve(config.pubkey || (config.key + ".pub"));
+config.packages = findFile(config.packages, correctJsonFile("packageSource/package-list.json5"));
 
 if (config.keygen) {
     generateKey();
 } else {
-    buildPackages();
+    buildPackages().then(function (localPackageData) {
+        var content;
+        content = "/* Morphic Install on Demand package info (" + new Date().toISOString() + ") */\n";
+        content += JSON5.stringify({packages: localPackageData}, null, "  ");
+        fs.writeFileSync(path.join(config.output, ".morphic-packages"), content);
+    });
 }
 
 /**
@@ -181,41 +185,48 @@ function buildPackages() {
         passphrase: config.keypass
     };
 
-    var packageNames = [];
-    if (config.all) {
-        packageNames.push.apply(packageNames, findAll());
-    }
-
+    var buildFiles = [];
+    var packageList;
     if (config.packages) {
-        var names = fluid.makeArray(config.packages).concat(config._);
-        fluid.each(names, function (name) {
-            packageNames.push.apply(packageNames, name.split(","));
+        packageList = JSON5.parse(fs.readFileSync(correctJsonFile(config.packages), "utf8"));
+        var baseDir = path.dirname(config.packages);
+        fluid.each(packageList.build, function (item) {
+            var files = glob.sync(item, {
+                cwd: baseDir,
+                absolute: true
+            });
+            buildFiles.push.apply(buildFiles, files);
         });
     }
 
-    if (packageNames.length === 0) {
-        console.log("No packages specified on the command line");
+    console.log("Found ", buildFiles.length, "packages to build");
+
+    if (buildFiles.length === 0) {
+        console.log("No packages specified.");
         process.exit(1);
     }
 
-    console.log("Building packages:", packageNames);
     mkdirp.sync(config.output);
 
     var promise = fluid.promise();
 
-    var packagesTodo = loadBuildInfo(packageNames);
-    var result = [];
+    var packagesTodo = loadBuildInfo(buildFiles);
+    // Information used when loading packages locally
+    var localPackageInfo = {};
 
     var buildNext = function () {
         var current = packagesTodo.shift();
         if (current) {
-            build(current, key).then(function (output) {
-                current.output = output;
-                result.push(current);
-                buildNext();
+            build(current, key).then(function (packageFile) {
+                // Read the file for some information for the local package data
+                current.output = packageFile;
+                getLocalPackageData(packageFile).then(function (info) {
+                    localPackageInfo[info.name] = info;
+                    buildNext();
+                });
             });
         } else {
-            promise.resolve(result);
+            promise.resolve(localPackageInfo);
         }
     };
 
@@ -225,31 +236,27 @@ function buildPackages() {
 }
 
 /**
- * Finds all packages in the package source directory.
- * @return {Array<String>} Array of directories containing build.json
+ * Reads a package file for some information to put in the local package data file.
+ * @param {String} packageFile The package file.
+ * @return {Promise<LocalPackage>} Resolves when complete.
  */
-function findAll(dir) {
-    if (!dir) {
-        dir = config.source;
-    }
+function getLocalPackageData(packageFile) {
+    var promise = fluid.promise();
+    gpii.iodServer.packageFile.read(packageFile).then(function (packageFileInfo) {
+        var result = {
+            name: packageFileInfo.packageData.name,
+            packageFile: path.relative(config.output, packageFileInfo.path),
+            packageData: packageFileInfo.packageDataJson,
+            packageDataSignature: packageFileInfo.signature.toString("base64")
+        };
 
-    var result = [];
-    var dirs = fs.readdirSync(dir);
-
-    dirs.forEach(function (filename) {
-        var child = path.join(dir, filename);
-        var stat = fs.statSync(child);
-
-        if (stat && stat.isDirectory()) {
-            // Search the directory
-            result = result.concat(findAll(child));
-        } else if (filename === "build.json") {
-            // This directory is a package
-            result.push(dir);
+        if (packageFileInfo.header.installerLength) {
+            result.installer = result.packageFile;
+            result.offset = packageFileInfo.header.installerOffset;
         }
+        promise.resolve(result);
     });
-
-    return result;
+    return promise;
 }
 
 /**
@@ -290,31 +297,23 @@ function correctJsonFile(file) {
 /**
  * Loads the build info for the packages to be built.
  *
- * @param {Array<String>} packageNames The package names.
+ * @param {Array<String>} buildFiles The build.json/json5 files.
  * @return {Array<Object>} The package data for each package. Dies on error.
  */
-function loadBuildInfo(packageNames) {
+function loadBuildInfo(buildFiles) {
     var togo = [];
 
-    fluid.each(packageNames, function (packageName) {
-        var dir;
-        if (packageName.indexOf("/") === -1 && packageName.indexOf("\\") === -1) {
-            // use the directory in ./packageSource
-            dir = path.resolve(config.source, packageName);
-        } else {
-            // if it contains a /, assume it's a directory.
-            dir = path.resolve(packageName);
-        }
-
-        var buildFile = correctJsonFile(path.join(dir, "build.json"));
-
+    fluid.each(buildFiles, function (buildFile) {
+        console.log("Loading", buildFile);
         /** @type BuildInfo */
-        var buildInfo = json5.parse(fs.readFileSync(buildFile, "utf8"));
+        var buildInfo = JSON5.parse(fs.readFileSync(buildFile, "utf8"));
+        var dir = path.dirname(buildFile);
+
 
         buildInfo.packageData = correctJsonFile(path.resolve(dir, buildInfo.packageData));
 
         /** @type PackageData */
-        var packageData = fluid.freezeRecursive(json5.parse(fs.readFileSync(buildInfo.packageData, "utf8")));
+        var packageData = fluid.freezeRecursive(JSON5.parse(fs.readFileSync(buildInfo.packageData, "utf8")));
         if (!packageData.name) {
             console.error("Package data file does not contain a 'name' field: ", packageData);
             process.exit(1);
@@ -323,7 +322,8 @@ function loadBuildInfo(packageNames) {
         buildInfo.name = packageData.name;
         buildInfo.dir = dir;
         buildInfo.packageDataObject = packageData;
-        buildInfo.packageOutput = path.join(config.output, buildInfo.category || "", buildInfo.name + ".morphic-package");
+        buildInfo.packageOutput = path.join(
+            config.output, "packages", buildInfo.category || "", buildInfo.name + ".morphic-package");
 
         togo.push(buildInfo);
     });
@@ -362,12 +362,13 @@ function build(buildInfo, key) {
         installer = path.resolve(buildInfo.dir, buildInfo.installer);
     }
 
+    // Create the package file
     var promiseTogo = fluid.promise();
     fluid.toPromise(installer).then(function (installerFile) {
         mkdirp.sync(path.dirname(buildInfo.packageOutput));
         gpii.iodServer.packageFile.create(buildInfo.packageDataObject, installerFile, key, buildInfo.packageOutput).then(function () {
             console.log("Built package '" + buildInfo.name + "':", buildInfo.packageOutput);
-            promiseTogo.resolve();
+            promiseTogo.resolve(buildInfo.packageOutput);
         }, function (err) {
             console.error("Failed building package '" + buildInfo.name + "':", err, buildInfo);
             process.exit(1);
@@ -377,7 +378,12 @@ function build(buildInfo, key) {
     return promiseTogo;
 };
 
-
+/**
+ * Download a file/
+ * @param {String} url The URL.
+ * @param {String} saveAs The destination file.
+ * @return {Promise} Resolves when complete.
+ */
 function fileDownload(url, saveAs) {
     var promise = fluid.promise();
 
@@ -412,3 +418,16 @@ function fileDownload(url, saveAs) {
 
     return promise;
 };
+
+/**
+ * Returns the first file in the arguments list that exists.
+ * @param {...String} var-args The paths to check.
+ * @return {String} The first file in the arguments list that exists, or undefined.
+ */
+function findFile() {
+    for (var i = 0; i < arguments.length; i++) {
+        if (fs.existsSync(arguments[i])) {
+            return arguments[i];
+        }
+    }
+}
