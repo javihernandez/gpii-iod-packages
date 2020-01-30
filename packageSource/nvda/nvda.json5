@@ -8,6 +8,7 @@
         args: [
             "--install-silent",
         ],
+        desktop: true,
         elevate: true
     },
 
