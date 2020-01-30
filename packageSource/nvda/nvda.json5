@@ -1,20 +1,38 @@
 {
     "name": "nvda",
     "description": "NVDA 2019.2.1",
-    "packageType": "msi",
+    "packageType": "exe",
 
-    "installer": "nvda-iod.msi",
+    "installer": "nvda_2019.2.1.exe",
+    "installerArgs": {
+        args: [
+            "--install-silent",
+        ],
+        elevate: true
+    },
 
-    "elevate": true,
-//    "isInstalled": {
-//        transform: {
-//            type: "fluid.transforms.value",
-//            input: "${{exists}C:\\Program Files\\Freedom Scientific\\ZoomText\\2020\\Zt.exe}"
-//        }
-//    }
-    "start": "${{environment}.LOCALAPPDATA}\\nvda-iod\\nvda.exe",
-    "stop": {
-        cmd: "${{environment}.LOCALAPPDATA}\\nvda-iod\\nvda.exe",
-        args: "--quit"
+    installCommands: {
+        "complete:after": {
+            command: "c:\\Program Files (x86)\\nvda\\nvda.exe",
+            args: [
+                "--minimal"
+            ]
+        }
+    },
+    uninstallCommands: {
+        "uninstall:before": {
+            command: "c:\\Program Files (x86)\\nvda\\nvda.exe",
+            args: [
+                "--quit"
+            ]
+        }
+    },
+    isInstalled: {
+        transform: {
+            type: "fluid.transforms.value",
+            input: "${{exists}c:\\Program Files (x86)\\nvda\\nvda.exe}"
+        }
     }
+
+
 }

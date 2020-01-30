@@ -1,8 +1,8 @@
 {
-    "name": "zoomtext",
-    "description": "ZoomText 2020",
+    "name": "jaws",
+    "description": "Jaws 2020",
     "packageType": "exe",
-    "installer": "ZT2020.1910.96.400.exe",
+    "installer": "J2020.1912.11.400-any.exe",
     "installerArgs": {
         "args": "/Type Silent",
         "elevate": true,
@@ -15,24 +15,24 @@
     },
     installCommands: {
         "prepareInstall:before": {
-            "command": "reg",
+            command: "reg",
             args: [
                 "delete",
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{2960bad8-ea85-4db3-82e2-5b6cbcb7d0e7}.RebootRequired",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{26be94c2-4503-451c-95cb-5eae1b36536e}.RebootRequired",
                 "/f"
             ],
             elevate: true
         },
-        "complete:after": {
-            command: "C:\\Program Files\\Freedom Scientific\\ZoomText\\2020\\Zt.exe"
+        "installComplete:after": {
+            command: "C:\\Program Files\\Freedom Scientific\\Jaws\\2020\\jfw.exe"
         }
     },
     uninstallCommands: {
         "uninstall:before": {
-            "command": "reg",
+            command: "reg",
             args: [
                 "delete",
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{2960bad8-ea85-4db3-82e2-5b6cbcb7d0e7}.RebootRequired",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{26be94c2-4503-451c-95cb-5eae1b36536e}.RebootRequired",
                 "/f"
             ],
             elevate: true
@@ -42,7 +42,7 @@
     "isInstalled": {
         transform: {
             type: "fluid.transforms.value",
-            input: "${{exists}C:\\Program Files\\Freedom Scientific\\ZoomText\\2020\\Zt.exe}"
+            input: "${{exists}C:\\Program Files\\Freedom Scientific\\Jaws\\2020\\jfw.exe}"
         }
     }
 }

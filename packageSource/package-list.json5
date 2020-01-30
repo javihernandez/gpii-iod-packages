@@ -1,5 +1,5 @@
 {
     build: [
-        "**/build.json?(5)",
+        "**/build.json?(5)"
     ]
 }

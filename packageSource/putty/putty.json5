@@ -3,5 +3,7 @@
     "description": "PuTTy 0.73",
     "packageType": "msi",
     "installer": "putty-0.73-installer.msi",
-    "elevate": true
+    "installerArgs": {
+        "elevate": true
+    },
 }

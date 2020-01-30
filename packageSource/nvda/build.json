@@ -1,4 +1,4 @@
 {
     "packageData": "nvda.json",
-    "installer": "nvda-iod.msi"
+    "installer": "https://www.nvaccess.org/files/nvda/releases/2019.2.1/nvda_2019.2.1.exe"
 }
