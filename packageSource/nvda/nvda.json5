@@ -14,7 +14,7 @@
 
     installCommands: {
         "complete:after": {
-            command: "c:\\Program Files (x86)\\nvda\\nvda.exe",
+            command: "c:\\Program Files (x86)\\nvda\\nvda_noUiAccess.exe",
             args: [
                 "--minimal"
             ]
@@ -22,7 +22,7 @@
     },
     uninstallCommands: {
         "uninstall:before": {
-            command: "c:\\Program Files (x86)\\nvda\\nvda.exe",
+            command: "c:\\Program Files (x86)\\nvda\\nvda_noUiAccess.exe",
             args: [
                 "--quit"
             ]
