@@ -194,7 +194,7 @@ function buildPackages() {
             var files = glob.sync(item, {
                 cwd: baseDir,
                 absolute: true
-            });
+            }).filter(function (file) { return !file.includes(".ignore"); });
             buildFiles.push.apply(buildFiles, files);
         });
     }
