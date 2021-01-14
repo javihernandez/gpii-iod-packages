@@ -1,0 +1,18 @@
+{
+    "name": "notepad",
+    "description": "notepad++ v7.8.2",
+    "packageType": "exe",
+
+    "installer": "npp.7.8.2.Installer.exe",
+    "installerArgs": "/S",
+    "uninstallCommand":"\"C:\\Program Files (x86)\\Notepad++\\uninstall.exe\"",
+    "uninstallerArgs": "/S",
+
+    "elevate": true,
+    "desktop": true,
+    "start": "\"C:\\Program Files (x86)\\Notepad++\\notepad++.exe\"",
+    "stop": {
+        cmd: "taskkill",
+        args: ["/f", "/im", "notepad++.exe"]
+    }
+}

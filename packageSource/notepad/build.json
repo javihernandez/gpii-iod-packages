@@ -1,0 +1,4 @@
+{
+    "packageData": "notepad.json",
+    "installer": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.2/npp.7.8.2.Installer.exe"
+}
