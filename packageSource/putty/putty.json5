@@ -1,8 +1,8 @@
 {
     "name": "putty",
-    "description": "PuTTy 0.73",
+    "description": "PuTTy 0.74",
     "packageType": "msi",
-    "installer": "putty-0.73-installer.msi",
+    "installer": "putty-0.74-installer.msi",
     "installerArgs": {
         "elevate": true
     },
