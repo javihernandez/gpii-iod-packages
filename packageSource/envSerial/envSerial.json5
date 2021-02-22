@@ -1,0 +1,32 @@
+{
+    "name": "envSerial",
+    "description": "envSerial 1.0.12",
+    "packageType": "exe",
+
+    "installer": "envserial-installer.exe",
+    "installerArgs": {
+        args: "/LANG=portuguese /VERYSILENT /SUPPRESSMSGBOXES",
+        desktop: true,
+        elevate: true
+    },
+
+    "uninstallerArgs": {
+        command: "c:\\Program Files (x86)\\EnvSerial\\unins000.exe",
+        args: "/VERYSILENT /SUPPRESSMSGBOXES",
+        desktop: true,
+        elevate: true
+    },
+
+    start: "\"C:\\Program Files (x86)\\EnvSerial\\envserial.exe\"",
+    stop: {
+        cmd: "taskkill",
+        args: ["/f", "/im", "envserial.exe"]
+    },
+
+    isInstalled: {
+        transform: {
+            type: "fluid.transforms.value",
+            input: "${{exists}c:\\Program Files (x86)\\EnvSerial\\envserial.exe}"
+        }
+    }
+}

@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "glob": "7.1.6",
-        "gpii-iod": "file:../iod/",
+        "gpii-iod": "javihernandez/gpii-iod#fcb97ecce6c369f73349c50c9e00289b043388df",
         "json5": "2.1.1",
         "minimist": "1.2.0",
         "mkdirp": "0.5.1",

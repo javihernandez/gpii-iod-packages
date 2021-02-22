@@ -11,29 +11,30 @@
         desktop: true,
         elevate: true
     },
+    "uninstallerArgs": {
+        command: "c:\\Program Files (x86)\\nvda\\uninstall.exe",
+        args: ["/S"],
+        desktop: true,
+        elevate: true
+    },
 
-    installCommands: {
-        "complete:after": {
-            command: "c:\\Program Files (x86)\\nvda\\nvda_noUiAccess.exe",
-            args: [
-                "--minimal"
-            ]
-        }
+    start: "\"C:\\Program Files (x86)\\nvda\\nvda_noUiAccess.exe\" --minimal",
+    stop: {
+        cmd: "taskkill",
+        args: ["/f", "/im", "nvda_noUiAccess.exe"]
     },
-    uninstallCommands: {
-        "uninstall:before": {
-            command: "c:\\Program Files (x86)\\nvda\\nvda_noUiAccess.exe",
-            args: [
-                "--quit"
-            ]
-        }
-    },
+
+    //uninstallCommands: {
+    //   "uninstall:before": {
+    //       command: "taskkill",
+    //       args: ["/f", "/im", "nvda_noUiAccess.exe"]
+    //   }
+    //},
+
     isInstalled: {
         transform: {
             type: "fluid.transforms.value",
             input: "${{exists}c:\\Program Files (x86)\\nvda\\nvda.exe}"
         }
     }
-
-
 }
