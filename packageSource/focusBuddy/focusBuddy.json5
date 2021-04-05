@@ -1,0 +1,33 @@
+{
+    "name": "focusBuddy",
+    "description": "Smartwork FocusBuddy",
+    "packageType": "exe",
+    "uninstallTime": "never",
+
+    "installer": "FocusBuddy_setup.exe",
+    "installerArgs": {
+        args: "/VERYSILENT /SUPPRESSMSGBOXES",
+        desktop: true,
+        elevate: true
+    },
+
+    "uninstallerArgs": {
+        command: "c:\\Program Files (x86)\\SmartWork FocusBuddy\\unins000.exe",
+        args: "/VERYSILENT /SUPPRESSMSGBOXES",
+        desktop: true,
+        elevate: true
+    },
+
+    start: "\"C:\\Program Files (x86)\\SmartWork FocusBuddy\\FocusBuddy.exe\"",
+    stop: {
+        cmd: "taskkill",
+        args: ["/f", "/im", "FocusBuddy.exe"]
+    },
+
+    isInstalled: {
+        transform: {
+            type: "fluid.transforms.value",
+            input: "${{exists}c:\\Program Files (x86)\\SmartWork FocusBuddy\\FocusBuddy.exe}"
+        }
+    }
+}
