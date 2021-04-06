@@ -1,0 +1,4 @@
+{
+    "packageData": "smartMouse.json",
+    "installer": "./SmartMouseSolution_InstallerSilent_v1_1.exe"
+}

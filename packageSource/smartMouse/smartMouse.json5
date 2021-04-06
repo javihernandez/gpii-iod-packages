@@ -1,0 +1,30 @@
+{
+    "name": "smartMouse",
+    "description": "SmartMouse 1.1",
+    "packageType": "exe",
+    "uninstallTime": "never",
+
+    "installer": "smartMouse-installer.exe",
+    "installerArgs": {
+        elevate: true,
+        desktop: true
+    },
+
+    "uninstallerArgs": {
+        desktop: true,
+        elevate: true
+    },
+
+    //start: "\"C:\\Program Files (x86)\\SmartMouse Solution\\Service\\SmartMouseService.exe\"",
+    stop: {
+        cmd: "taskkill",
+        args: ["/f", "/im", "SmartMouseService.exe"]
+    },
+
+    isInstalled: {
+        transform: {
+            type: "fluid.transforms.value",
+            input: "${{exists}c:\\Program Files (x86)\\SmartMouse Solution\\Service\\SmartMouseService.exe}"
+        }
+    }
+}

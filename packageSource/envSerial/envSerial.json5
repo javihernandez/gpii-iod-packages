@@ -2,6 +2,7 @@
     "name": "envSerial",
     "description": "envSerial 1.0.12",
     "packageType": "exe",
+    "uninstallTime": "never",
 
     "installer": "envserial-installer.exe",
     "installerArgs": {
