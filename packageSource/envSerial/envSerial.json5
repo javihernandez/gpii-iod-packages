@@ -6,7 +6,7 @@
 
     "installer": "envserial-installer.exe",
     "installerArgs": {
-        args: "/LANG=portuguese /VERYSILENT /SUPPRESSMSGBOXES",
+        args: "/VERYSILENT /SUPPRESSMSGBOXES",
         desktop: true,
         elevate: true
     },
