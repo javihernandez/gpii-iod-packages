@@ -1,5 +1,6 @@
 {
     "name": "smartMouse",
+    "version": "1.3.0",
     "description": "SmartMouse 1.3",
     "packageType": "exe",
     "uninstallTime": "never",

@@ -1,5 +1,6 @@
 {
     "name": "envSerial",
+    "version": "1.0.12",
     "description": "envSerial 1.0.12",
     "packageType": "exe",
     "uninstallTime": "never",

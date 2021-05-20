@@ -1,5 +1,6 @@
 {
     "name": "focusBuddy",
+    "version": "1.0.0",
     "description": "Smartwork FocusBuddy",
     "packageType": "exe",
     "uninstallTime": "never",
