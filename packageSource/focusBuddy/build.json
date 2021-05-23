@@ -1,4 +1,4 @@
 {
     "packageData": "focusBuddy.json",
-    "installer": "https://docs.smartworkproject.eu/apps/cse/FocusBuddy setup 1.0.1.exe"
+    "installer": "./FocusBuddy setup 2.0.0.exe"
 }
