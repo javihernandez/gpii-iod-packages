@@ -1,7 +1,7 @@
 {
     "name": "smartworkDesktop",
-    "version": "1.0.2",
-    "description": "SmartWorkDesktop 1.0.2",
+    "version": "1.0.6",
+    "description": "SmartWorkDesktop 1.0.6",
     "packageType": "exe",
     "uninstallTime": "never",
 
